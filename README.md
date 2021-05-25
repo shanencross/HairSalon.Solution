@@ -19,10 +19,11 @@ A Learning projecting for Epicodus class. Purpose is to practice using databases
 MVC web application for a salon which has stylists and clients. Every stylist has many clients, but every client only sees one stylist.
 
 The website has the following featurse:
-* Display list of a stylists
+* Display a list of stylists
 * View the details of a particular stylist, listing their clients
 * Add a new stylist
 * Add a client to a specific stylist (only if there are any stylists)
+* View details about a particular client, providing a link to their stylist
 
 ## Setup/Installation Requirements
 
