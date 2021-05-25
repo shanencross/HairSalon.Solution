@@ -32,9 +32,14 @@ The website has the following featurse:
 * Install [MySQL](https://dev.mysql.com/downloads/mysql/) and create a database with a name and password of your choosing
 
 ### Creating Database
-* Enter the following in the terminal, replacing \[PASSWORD\] with the password you selected during your MySQL setup: ```mysql -uroot -p[PASSWORD]```
+* Enter the following in the terminal, replacing \[PASSWORD\] with the password you selected during your MySQL setup: 
+```
+mysql -uroot -p[PASSWORD]
+```
 * Enter the following command for MySQL into the terminal:
-```CREATE DATABASE `bestaurants`;
+
+```
+CREATE DATABASE `bestaurants`;
 USE bestaurants;
 CREATE TABLE `stylists` (
     `StylistId` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,14 +53,15 @@ CREATE TABLE `clients` (
     `HairColor` varchar(255) DEFAULT NULL,
     `StylistId` int(11) NOT NULL DEFAULT '0',
     PRIMARY KEY (`ClienttId`)
-);```
+);
+```
 
 ### Installing Application
-* Use _git clone_ to download this repository to a local directory
+* Use ```git clone``` to download this repository to a local directory
 * Navigate to this local directory in your terminal
-* Navigate to the _/HairSalon_ folder in your terminal
-* Enter _dotnet restore_ to install packages
-* Enter _touch appsettings.json_ to create an appsettings file.
+* Navigate to the ```/HairSalon``` folder in your terminal
+* Enter ```dotnet restore``` to install packages
+* Enter ```touch appsettings.json``` to create an appsettings file.
 * Open appsettings.json with a text editor, enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with the:
 ```
 {
@@ -64,8 +70,8 @@ CREATE TABLE `clients` (
   }
 }
 ```
-* Enter _dotnet run_ to build and run the application; or alternatively, use _dotnet watch run_ to make the server refresh whenever a file is saved
-* The terminal will output that it is "Now listening on" a certain URL. For me this is _http://localhost:5000_, but it could be different.
+* Enter ```dotnet run``` to build and run the application; or alternatively, use ```dotnet watch run``` to make the server refresh whenever a file is saved
+* The terminal will output that it is "Now listening on" a certain URL. For me this is ```http://localhost:5000```, but it could be different.
 * Navigate in your web browser to whatever URL is displayed. This will show the home page.
 
 ## Known Bugs
