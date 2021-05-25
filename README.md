@@ -29,17 +29,17 @@ The website has the following featurse:
 ### Installing Prerequisites
 * Install git
 * Install the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-* Install [MySQL](https://dev.mysql.com/downloads/mysql/) and create a database with a name and password of your choosing
+* Install [MySQL](https://dev.mysql.com/downloads/mysql/) and create a server with a password of your choosing
 
 ### Creating Database
 * Enter the following in the terminal, replacing \[PASSWORD\] with the password you selected during your MySQL setup: 
 ```
 mysql -uroot -p[PASSWORD]
 ```
-* Enter the following command for MySQL into the terminal:
+* Enter the following command for MySQL into the terminal, replacing \[DATABASE_NAME\] with a name of your choosing (for example, _hairsalon_):
 
 ```
-CREATE DATABASE `bestaurants`;
+CREATE DATABASE `[DATABASE_NAME]`;
 USE bestaurants;
 CREATE TABLE `stylists` (
     `StylistId` int(11) NOT NULL AUTO_INCREMENT,
@@ -62,7 +62,7 @@ CREATE TABLE `clients` (
 * Navigate to the ```/HairSalon``` folder in your terminal
 * Enter ```dotnet restore``` to install packages
 * Enter ```touch appsettings.json``` to create an appsettings file.
-* Open appsettings.json with a text editor, enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with the:
+* Open appsettings.json with a text editor, enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with your chosen database name and server password:
 ```
 {
   "ConnectionStrings": {
