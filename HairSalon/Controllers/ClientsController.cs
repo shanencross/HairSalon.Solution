@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
 using HairSalon.Models;
 
 namespace HairSalon.Controllers
@@ -10,6 +12,21 @@ namespace HairSalon.Controllers
     public ClientsController(HairSalonContext db)
     {
       _db = db;
+    }
+
+    public ActionResult Create()
+    {
+      ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
+      ViewBag.StylistCount = _db.Stylists.Count();
+      return View();
+    }
+
+    [HttpPost]
+    public ActionResult Create(Client client, int stylistId)
+    {
+      _db.Add(client);
+      _db.SaveChanges();
+      return RedirectToAction("Index", "Stylists");
     }
   }
 }
