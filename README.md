@@ -39,7 +39,7 @@ mysql -uroot -p[PASSWORD]
 * Enter the following command for MySQL into the terminal (for Epicodus, instructions were to use my name for the database name):
 ```
 CREATE DATABASE `shanen_cross`;
-USE bestaurants;
+USE shanen_cross;
 CREATE TABLE `stylists` (
     `StylistId` int(11) NOT NULL AUTO_INCREMENT,
     `Name` varchar(255) DEFAULT NULL,
