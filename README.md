@@ -20,7 +20,7 @@ MVC web application for a salon which has stylists and clients. Every stylist ha
 
 The website has the following featurse:
 * Display list of a stylists
-* View the details of a particular stylist
+* View the details of a particular stylist, listing their clients
 * Add a new stylist
 * Add a client to a specific stylist (only if there are any stylists)
 
