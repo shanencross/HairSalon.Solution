@@ -36,10 +36,9 @@ The website has the following featurse:
 ```
 mysql -uroot -p[PASSWORD]
 ```
-* Enter the following command for MySQL into the terminal, replacing \[DATABASE_NAME\] with a name of your choosing (for example, _hairsalon_):
-
+* Enter the following command for MySQL into the terminal (for Epicodus, instructions were to use my name for the database name):
 ```
-CREATE DATABASE `[DATABASE_NAME]`;
+CREATE DATABASE `shanen_cross`;
 USE bestaurants;
 CREATE TABLE `stylists` (
     `StylistId` int(11) NOT NULL AUTO_INCREMENT,
@@ -62,11 +61,11 @@ CREATE TABLE `clients` (
 * Navigate to the ```/HairSalon``` folder in your terminal
 * Enter ```dotnet restore``` to install packages
 * Enter ```touch appsettings.json``` to create an appsettings file.
-* Open appsettings.json with a text editor and enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with your chosen database name and server password:
+* Open appsettings.json with a text editor and enter the following, replacing \[PASSWORD\] with your chosen server password:
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=[DATABASE_NAME];uid=root;pwd=[PASSWORD];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=shanen_cross;uid=root;pwd=[PASSWORD];"
   }
 }
 ```
