@@ -26,7 +26,7 @@ namespace HairSalon.Controllers
     {
       _db.Add(client);
       _db.SaveChanges();
-      return RedirectToAction("Index", "Stylists");
+      return RedirectToAction("Index", "Home");
     }
 
     public ActionResult Details(int id)
