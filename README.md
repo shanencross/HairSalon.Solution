@@ -51,7 +51,7 @@ CREATE TABLE `clients` (
     `Name` varchar(255) DEFAULT NULL,
     `HairColor` varchar(255) DEFAULT NULL,
     `StylistId` int(11) NOT NULL DEFAULT '0',
-    PRIMARY KEY (`ClienttId`)
+    PRIMARY KEY (`ClientId`)
 );
 ```
 
