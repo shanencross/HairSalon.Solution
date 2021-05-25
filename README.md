@@ -62,7 +62,7 @@ CREATE TABLE `clients` (
 * Navigate to the ```/HairSalon``` folder in your terminal
 * Enter ```dotnet restore``` to install packages
 * Enter ```touch appsettings.json``` to create an appsettings file.
-* Open appsettings.json with a text editor, enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with your chosen database name and server password:
+* Open appsettings.json with a text editor and enter the following, replacing \[DATABASE_NAME\] and \[PASSWORD\] with your chosen database name and server password:
 ```
 {
   "ConnectionStrings": {
